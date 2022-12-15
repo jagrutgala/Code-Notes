@@ -77,7 +77,87 @@ console.log("Completed loading add.js")
 
 **index.js**
 ```javascript
-require("./add.js)
+require("./add.js")
 
 console.log("Hello from index.js")
 ```
+
+### Module Exports
+If we want to export particular parts of our code from a file to another, we can use `module.exports` property in NodeJs.
+
+#### Exmaple #1 [Exporting 1 Objects]
+
+**add.js**
+```javascript
+const add = (a, b) => {
+  return a + b;
+}
+
+module.exports = add;
+```
+
+**index.js**
+```javascript
+var addFn = require("add.js");
+let sum = addFn(3, 5)
+console.log(sum);
+
+console.log("Hello from index.js")
+```
+
+The `require()` returns the `module.exports` object. Here in this example module exports returns `add` function.
+
+The imported name need not be same as in the file where it was defined in. This is known as the **default import** functionality in NodeJs.
+
+#### Exmaple #2 [Exporting multiple Objects]
+
+**calculator.js**
+```javascript
+const add = (a, b) => {
+  return a + b;
+}
+const sub = (a, b) => {
+  return a - b;
+}
+const mul = (a, b) => {
+  return a *+* b;
+}
+const div = (a, b) => {
+  return a / b;
+}
+
+module.exports = {
+  add,
+  sub,
+  mul,
+  div
+};
+```
+
+**index.js**
+```javascript
+var calFuncs = require("calculator.js");
+let sum = calFuncs.add(3, 5)
+console.log(sum);
+
+let dif = calFuncs.sub(35, 5)
+console.log(dif);
+
+let prod = calFuncs.mul(3, 5)
+console.log(prod);
+
+let quo = calFuncs.div(15, 5)
+console.log(quo);
+
+console.log("Hello from index.js")
+```
+When we want to export multiple objects from a module; We essentially export an object that comprises of other objects and functions.
+
+In this scenario, we export an object containing `add`, `sub`, `mul` and `div`. We import this object in `index.js` and use its key-names to get its values.
+
+> [Tip]
+>
+> We can also destructure the object to directly use the inside values.
+
+
+

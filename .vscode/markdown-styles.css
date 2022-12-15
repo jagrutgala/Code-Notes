@@ -42,7 +42,7 @@ body {
 }
 
 .vscode-dark blockquote {
-	color: #5C6370;
+	color: hsl(64, 45%, 70%);
 	font-style: italic;
 	background: transparent;
 	border-color: #2C323C;
