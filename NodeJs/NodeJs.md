@@ -85,7 +85,7 @@ console.log("Hello from index.js")
 ### Module Exports
 If we want to export particular parts of our code from a file to another, we can use `module.exports` property in NodeJs.
 
-#### Exmaple #1 [Exporting 1 Objects]
+#### Exmaple #1 Exporting 1 Objects
 
 **add.js**
 ```javascript
@@ -109,7 +109,7 @@ The `require()` returns the `module.exports` object. Here in this example module
 
 The imported name need not be same as in the file where it was defined in. This is known as the **default import** functionality in NodeJs.
 
-#### Exmaple #2 [Exporting multiple Objects]
+#### Exmaple #2 Exporting multiple Objects
 
 **calculator.js**
 ```javascript
@@ -160,4 +160,109 @@ In this scenario, we export an object containing `add`, `sub`, `mul` and `div`. 
 > We can also destructure the object to directly use the inside values.
 
 
+### Module Scope
 
+In NodeJs each module has its own scope.
+
+**batman.js**
+
+```javaScript
+const superHero = "Batman";
+console.log(superhero);
+```
+
+**superman.js**
+
+```javaScript
+const superHero = "Superman";
+console.log(superhero);
+```
+
+**index.js**
+
+```javaScript
+require("batman.js")
+require("superman.js")
+```
+
+#### iife
+
+Iife also known as Self Invoking function.
+
+Before module code is executed NodeJs wraps it in a iife. This provides each module with its own scope. This also saves us from having to worry about conflicting variables or functions.
+
+**iffe.js**
+
+```javascript
+(function() {
+const superHero = "Batman";
+console.log(superhero);
+})()
+
+(function() {
+const superHero = "Superman";
+console.log(superhero);
+})()
+```
+
+NodeJs wraps each module with a function with 5 parameters.
+
+```javascript
+(function (exports, require, module, __filename, __dirname){
+  // module code here.
+})
+```
+- `exports` :
+- `require` : Import function to require other modules.
+- `module` : Refers to module object of the current module.
+- `__filename` : Contains string path of the current module file.
+- `__dirname` : Contains string path of the current directory where the module file is located.
+
+### Module Caching
+
+NodeJs loads and then caches a module when we require it for subsequent loading.
+
+#### Example #1 ❌ Module Caching
+
+**superHero.js**
+
+```javascript
+class SuperHero {
+  contructor() {
+    this.name = "Batman";
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  setName(newName) {
+    this.name = newName;
+  }
+}
+
+module.exports = new SuperHero();
+```
+In Example #1, if we are using `superHero.js` module in two or more places, all the of them will be reffering to the same object of `SuperHero`.
+
+#### Example #2 ✔ Module Caching
+
+**superHero.js**
+
+```javascript
+class SuperHero {
+  contructor() {
+    this.name = "Batman";
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  setName(newName) {
+    this.name = newName;
+  }
+}
+
+module.exports = SuperHero;
+```
