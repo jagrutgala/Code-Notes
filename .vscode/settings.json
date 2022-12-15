@@ -1,0 +1,7 @@
+{
+    "markdown.preview.markEditorSelection": false,
+    "markdown.styles": [
+        ".vscode/markdown-styles.css"
+    ],
+    "oneDarkPro.markdownStyle": false,
+}
