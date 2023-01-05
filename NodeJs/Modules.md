@@ -1,9 +1,9 @@
 # Modules
 
 Node has three types of modules:
-- Local Modules
-- Built-in Modules
-- Third Party Modules
+- Local Modules: Modules that we make.
+- Built-In Modules: Modules that NodeJs ships with
+- Third Party Modules: Modules that we can install
 
 ## Creating a Local Module
 
@@ -267,11 +267,15 @@ import {add, sub} from "./math.js"
 console.log(add(2,5))
 ```
 
+## Import Json Objects
+We can import json data as a javascript object directly using the require function.
 
+**index.js**
+```javascript
+const data = require("./data.json");
+```
 
-
-
-
-
-
-
+> Note
+>
+> `.json` extension is not mandatory, but if not given Node will try to find `<filename>.js` file first and load that instead of `<filenaeme.json` file.
+> So it is a best practice to keep the `.json` extension.
