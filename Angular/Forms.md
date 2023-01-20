@@ -90,8 +90,15 @@ export class HomeComponent {
 
 ## Reactive Forms
 
+
+
+
 ## Forms Array
 
 ## Dynamic Form Styling
 
 use ngClass directive
+
+**Next Steps**
+* [Styling](Styling.md#angular-component-styling)
+

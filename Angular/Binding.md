@@ -145,3 +145,6 @@ export class HomeComponent {
 > We imported FormsModule in app.module.ts so we can use ngModel in the component template
 
 
+**Next Steps**
+* [Directive](Directives.md#angular-directives)
+* [Forms](Forms.md#angular-forms)

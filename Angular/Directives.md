@@ -1,5 +1,13 @@
 # Angular Directives
 
+In Angular, a **directive** is a class that adds behavior to an element by attaching a custom attribute or a custom element to it. Directives allow you to extend the HTML language, and to create reusable components.
+
+There are two types of directives in Angular:
+
+- `Component directives`: These are directives that are associated with a template and a component class. They are used to create reusable UI components. Component directives are created by using the `@Component decorator`.
+
+- `Structural directives`: These are directives that change the structure of the DOM. They are used to add or remove elements from the DOM. Structural directives are created by using the `@Directive decorator`.
+
 ## In-Built Structural Directives
 
 ### ngIf
@@ -137,3 +145,38 @@ export class HomeComponent {
 > Note
 >
 > `ngSwitch` directive is depreciated and replaced by `ngIf` and `ng-template` based conditions.
+
+
+## Creating Custom Directive
+
+```
+$ ng generate directive <directive-name>
+```
+OR
+
+```
+$ ng g d <directive-name>
+```
+
+**app-highlight.directive.ts**
+
+```typescript
+import { Directive, ElementRef, Input } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+  @Input() color: string;
+
+  constructor(private el: ElementRef) { }
+
+  ngOnInit() {
+    this.el.nativeElement.style.backgroundColor = this.color;
+  }
+}
+```
+
+**Next Steps**
+* [Binding](Binding.md#angular-component-template-bindings)
+* [Forms](Forms.md#angular-forms)

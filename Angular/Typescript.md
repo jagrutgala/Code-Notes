@@ -226,3 +226,5 @@ function identity<T>(arg: T): T {
 >
 > Some good examples of such generic functions are the map, filter, sort, reduce methods.
 
+# Next Steps
+[Angular -->](Angular.md#angular)
