@@ -1,8 +1,8 @@
-## Path Module
+# Path Module
 
 Path modules provides utilities for working with files and directory paths.
 
-### \_\_filename
+## \_\_filename
 
 \_\_filename represents the full path of the current file
 
@@ -13,7 +13,7 @@ const path = require("node:path");
 console.log(__filename);
 ```
 
-### \_\_dirname
+## \_\_dirname
 
 \_\_dirname represents the full path of the current directory
 
@@ -24,7 +24,7 @@ const path = require("node:path");
 console.log(__dirname);
 ```
 
-### basename
+## basename
 
 basename function returns the basename of a file or directory
 
@@ -36,7 +36,7 @@ console.log(path.basename(__filename));
 console.log(path.basename(__dirname));
 ```
 
-### extname
+## extname
 
 extname function returns the extension of a file and empty string for directory
 
@@ -48,7 +48,7 @@ console.log(path.extname(__filename));
 console.log(path.extname(__dirname));
 ```
 
-### parse
+## parse
 
 parses a path into a object with the following interface
 
@@ -69,7 +69,7 @@ const path = require("node:path");
 console.log(parse);
 ```
 
-### isAbsolute
+## isAbsolute
 
 isAbsolute return true if the path is absolute
 
@@ -81,7 +81,7 @@ console.log(path.isAbsolute(__dirname));
 console.log(path.isAbsolute("./Images/javascript-runtime.png"));
 ```
 
-### join
+## join
 
 join function takes pieces of path and join them together into a normalized path.
 
@@ -97,7 +97,7 @@ console.log(path.join("dir1", "//dir2", "../file.txt"));
 // output --> dir1/file.txt
 ```
 
-### resolve
+## resolve
 
 **index.js**
 
