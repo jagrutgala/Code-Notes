@@ -49,11 +49,72 @@ $ git init [<directory>]
 
 ## Snapshotting
 
+In Git, the process of taking a `snapshot` or `image` of the current state of your code at a particular point in time is referred to as "snapshotting." This snapshot contains every file and directory in your repository, along with their contents.
+
+A `commit` is the git version of a snapshot. We can create a commit in Git by using the `git commit` command. Git stages all of your changes and creates a new commit of the repository's history.
+
 ### git add
+
+`git add` command is used to add changes into the staging area. Staging area is a collection of changes that will be committed if you commit.
+
+```
+$ git add [options] <file/directory-path>
+```
+
+commonly used flags with `git add` are
+
+- `-A` or `--all`: This flag stages all changes, including new files, modifications, and deletions.
+- `-u` or `--update`: This flag stages changes to files that are already being tracked by Git. It does not stage new files that have been added.
+- `-n` or `--dry-run`: This flag doesn't actually add the file(s), just show if they exist and/or will be ignored.
+- `-i` or `--interactive`: This flag provides a interactive menu to add modifications of working directory to the staging area.
+- `-p` or `--patch`: This flag allows you to interactively choose which patches you wish to stage. This effectively runs `git add --interactive`, but bypasses the initial command menu and directly jumps to the patch subcommand.
+
+#### git add (interactive mode)
+
+The `-i` or `--interactive` flag for the git add command launches an interactive mode for staging changes. This allows you to selectively stage parts of a file or multiple files, as opposed to staging the entire file(s) with the normal git add command.
+
+In interactive mode, Git will present you with a menu of options, including:
+
+- `s`: stage this hunk.
+- `n`: do not stage this hunk.
+- `q`: quit; do not stage this hunk nor any of the remaining ones.
+- `a`: stage this and all later hunks in the file.
+- `d`: do not stage this hunk nor any of the later hunks in the file.
+- `g`: select a hunk to go to.
+- `/`: search for a hunk matching the given regex.
+- `j`: leave this hunk undecided, see next undecided hunk.
+- `J`: leave this hunk undecided, see next hunk.
+- `k`: leave this hunk undecided, see previous undecided hunk.
+- `K`: leave this hunk undecided, see previous hunk.
+  Using this interface, you can review the changes to each file and decide which changes to stage and which to leave unstaged.
+
+The git add -i command can be useful when you want to carefully control which changes are staged, especially when working with large or complex changes.
 
 ### git status
 
+`git status` command displays current status of the repository. It shows information like:
+
+- your current branch.
+- files modified but not staged yet.
+- files staged and are ready to be committed.
+- files not being tracked by Git.
+
+The output of the `git status` command is usually color-coded, with different colors indicating different types of changes (e.g., unstaged changes, staged changes, untracked files, etc.).
+
 ### git diff
+
+The `git diff` command is used to show the differences between the working directory, the staging area (index), and the most recent commit in your Git repository.
+
+`git diff` (default) with no arguments will show the differences between the _working directory_ and the _staging area_.
+
+`git diff --staged` or `git diff --cached` will show the differences between the _staging area_ and the _most recent commit_.
+
+`git diff <commit-hash> <commit-hash>` will show the differences between the _those two commits_.
+
+`git diff <commit-hash> <commit-hash>` will show the differences between the _those two commits_.
+
+You can also use git diff to compare the differences between two different commits, branches, or tags. For example, to compare the changes between the current branch and a different branch, you can use the command git diff <branch-name>.
+
 
 ### git commit
 
@@ -143,8 +204,6 @@ $ git remote -v
 
 ## Git Config
 
-
-
 <!-- # Git Ignore File -->
 
 <!-- future topics -->
@@ -158,3 +217,5 @@ switch
 git server
 
  -->
+
+- [ ] as
