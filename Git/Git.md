@@ -118,11 +118,29 @@ You can also use git diff to compare the differences between two different commi
 
 ### git commit
 
+`git commit` command takes a snapshot of your changes in staging area. It captures the difference between the last snapshot and current snapshot. You can also add a note to remind yourself about the changes. It is like a save, and a serries of commits tracks the progress & evolution of your project overtime. Example of `git commit` command is: `git commit -m "Initial Commit"`
+
+commonly used flags with `git commit` are
+
+- `-m`: This flag lets you write a short message right away, just like quickly explaining your changes.
+- `--amend`: Imagine you forgot to add a message to your commit. This flag helps you add and edit the last commit. (Note: this overrides the last commit with a new commit).
+- `-a`: This flag automatically takes a picture of all your coloring changes without making you do it one by one.
+- `--no-edit`: This flag specifies that you are rewording or amending the commit but don't want to change the commit message.
+- `--allow-empty`: This flag allows you to commit without any changes to the repository.
+
 ### git notes
 
 ### git restore
 
 ### git reset
+
+`git reset` take you back to previous commits, undoing the changes. A simple example of git reset is `git reset --hard <commit-hash>`. This command with take you back to whatever state you repository at the time of `<commit-hash>`.
+
+commonly used flags with `git reset` are
+- `--hard`: Using this flag with git reset will remove changes completely.
+> Note: Changes will be lost forever.
+- `--soft`: Using this flag with git reset will remove the commits but keep the changes. The changes will be unstaged.
+- `--mixed`: This flag is a mix of `--soft` and `--hard` where the commits are remove and changes are unstaged. Plus, you can decide which changes to put back on the remove completely and which to keep.
 
 ### git rm
 
