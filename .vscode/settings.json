@@ -1,7 +1,11 @@
 {
     "markdown.preview.markEditorSelection": false,
     "markdown.styles": [
-        ".vscode/markdown-styles.css"
+        "./.vscode/markdown-styles.css"
     ],
     "oneDarkPro.markdownStyle": false,
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "cSpell.words": [
+        "Snapshotting"
+    ]
 }
