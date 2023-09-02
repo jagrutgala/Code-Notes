@@ -1,5 +1,7 @@
-## Synchronization
-### git remote
+# Synchronization
+
+
+## git remote
 
 `git remote` command used to manage remote connections in a Git repository. The `git remote` command allows you to view, add, and remove connections to repositories. A Git Remote is a cloud server of sorts that stores a copy of your code, as a back up. It also serves as a platform for sharing you code with your colleagues and friends for collaboration.
 
@@ -32,7 +34,7 @@ $ git remote set-url <name> <new-url>
 $ git remote -v
 ```
 
-### git pull
+## git pull
 `git pull` is command that checks if there are any new commits to the remote and if there are, then pull the commits from the remote to your repository and merges them in the current branch.
 ```
 $ git pull <remote> <branch>
@@ -43,7 +45,7 @@ commonly used flags with `git pull` are
 - `--no-commit`: This fetches changes and attempts a merge, but it doesn't create a new commit. It's useful if you want to review and possibly modify the merge before committing it.
 - `--allow-unrelated-histories`: his allows you to pull changes even if the local and remote branches have unrelated commit histories. This can be useful when initializing a new repository with existing code.
 
-### git push
+## git push
 `git push` is command that you to uploads new commits from your local repository to the remote repository. If someone else has pushed changes to the remote branch since your last fetch, there might be conflicts. Git will notify you about these conflicts, and you'll need to resolve them locally before you can successfully push.
 
 ```
@@ -58,7 +60,7 @@ commonly used flags with `git push` are
 > Note:
 > `$ git push origin <commit-hash>:<branch>` to push commits up to that commit.
 
-### git fetch
+## git fetch
 `git fetch` is command that checks if there are any new commits to the remote and if there are, then pull index from the remote to your repository. `git fetch` only updates the index, meaning it does not bring the commits or merge the commits from the remote to your repository. It's a safe way to see what changes are available on the remote repository and update your local references accordingly
 ```
 $ git fetch

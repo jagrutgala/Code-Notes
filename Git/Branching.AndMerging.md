@@ -1,17 +1,17 @@
-## Branching and Merging
+# Branching and Merging
 
-### git branch
+## git branch
 
-### git checkout
+## git checkout
 
-### git switch
+## git switch
 
-### git merge
+## git merge
 
-### git mergetool
+## git mergetool
 
-### git stash
+## git stash
 
-### git tag
+## git tag
 
-### git worktree
+## git worktree
