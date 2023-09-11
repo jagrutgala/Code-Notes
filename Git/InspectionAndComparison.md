@@ -1,8 +1,40 @@
 # Inspection and Comparison
 
+
+
 ## git show
 
+`git show` command is used to see a specific commit details.
+
+Syntax for `git show`:
+```
+$ git show [<options>] [<commit-hash>...]
+```
+
+commonly used flags with `git show` are:
+- `-p`: shows changes made in the commit, basically a diff
+- `--stat`: shows number of lines changed in each file
+
 ## git log
+
+The `git log` command is used to see all the commit logs. The commits are ordered by time of commit. The log shows the following info:
+- commit hash
+- which branch the commit was made on
+- author of the commit name + email
+- commit message
+
+Syntax for git log:
+```
+$ git log [<option>] [<range>] [path]
+```
+
+commonly used flags with `git log` are:
+
+- `--graph`: text-based graphical representation of the commit history. The graph representation helps understand commits & merges on different branches
+- `-<n>`: it shows the latest `n` commits
+- `--after`: show commits after a date
+- `--before`: show commits before a date
+
 
 ## git diff
 
