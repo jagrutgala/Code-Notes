@@ -94,8 +94,35 @@ commonly used flags with `git reset` are
 - `--mixed`: This flag is a mix of `--soft` and `--hard` where the commits are remove and changes are unstaged. Plus, you can decide which changes to put back on the remove completely and which to keep.
 
 ## git rm
+`git rm` command is used to remove files from the git. It is also frequently used to remove files from staging area. For example, Say we have a file we no longer want to be tracked. We will use this command to remove it completely, then add the file to gitignore.
+
+Syntax for `git rm`:
+```
+$ git rm [options] [<file/path>]
+```
+
+commonly used flags for `git rm` are:
+- `-r`: recursive flag used on a directory to remove the directory and all its children
+- `--cached`: cached flag is used to signify to remove from staging area
+
+Example of `git rm` to remove all files from staging area:
+```
+$ git rm --cached
+```
 
 ## git mv
+`git mv` command is used to **move files** or **rename files** in the git.
+
+Syntax for `git mv`:
+```
+$ git mv [options] <source> <destination>
+```
+
+Example of `git mv` to rename a file:
+```
+$ git mv hello.txt world.txt
+```
+
 
 ## git notes
 
