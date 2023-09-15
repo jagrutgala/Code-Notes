@@ -1,6 +1,8 @@
 # Inspection and Comparison
 
-
+<!-- description -->
+<!-- use of inspection -->
+<!-- use of comparision -->
 
 ## git show
 
@@ -50,3 +52,9 @@ The `git diff` command is used to show the differences between the working direc
 
 You can also use git diff to compare the differences between two different commits, branches, or tags. For example, to compare the changes between the current branch and a different branch, you can use the command git diff <branch-name>.
 
+
+# Next Steps
+[<-- Snapshotting](Snapshotting.md) | [Syncronization -->](Syncronization.md)
+
+## Also See
+- [debugging git](Debugging.md)

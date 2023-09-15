@@ -29,7 +29,12 @@ Some other Version Control systems other than Git are :
 
 **Miscellaneous**: various other Git commands not fitting into the above categories. Examples: git `stash`, git `rebase`.
 
-## Miscellaneous
+
+# Next Steps
+[Repo Setup -->](RepositorySetup.md)
+
+
+<!-- ## Miscellaneous -->
 
 
 <!-- # Git Ignore File -->

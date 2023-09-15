@@ -67,3 +67,7 @@ $ git fetch
 ```
 - `--all`: This fetches changes from all remote repositories that are configured in your local repository.
 - `--prune`: This prunes (deletes) references to remote branches on your local repository that have been deleted on the remote repository. It helps keep your local references up-to-date.
+
+
+# Next Steps
+[<-- Inspection & Comparison](InspectionAndComparison.md) | [Patching -->](Patching.md)

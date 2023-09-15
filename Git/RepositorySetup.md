@@ -15,3 +15,7 @@ $ git clone <repository-url> [<directory>]
 ```
 $ git init [<directory>]
 ```
+
+# Next Steps
+
+[<-- Git](Git.md) | [Snapshotting -->](Snapshotting.md)

@@ -4,6 +4,14 @@ In Git, the process of taking a `snapshot` or `image` of the current state of yo
 
 A `commit` is the git version of a snapshot. We can create a commit in Git by using the `git commit` command. Git stages all of your changes and creates a new commit of the repository's history.
 
+
+## Git Workspace
+
+### untracked
+### tracked
+### staged
+
+
 ## git add
 
 `git add` command is used to add changes into the staging area. Staging area is a collection of changes that will be committed if you commit.
@@ -90,3 +98,11 @@ commonly used flags with `git reset` are
 ## git mv
 
 ## git notes
+
+
+# Next Steps
+[<-- Repo Setup](RepositorySetup.md) | [Inscpection & Comparison -->](InspectionAndComparison.md)
+
+## Also see
+- [gitignore (recommended)](GitIgnore.md)
+- [git config](GitConfig.md)
