@@ -17,7 +17,7 @@ A directory named after the component
 - A CSS file, <component-name>.component.css
 - A testing specification file, <component-name>.component.spec.ts
 
-`@Component` decorator specifies the the following -
+`@Component` decorator specifies the the following:
 
 - `selector`: The CSS selector that identifies this directive in a template and triggers instantiation of the directive.
 
@@ -131,7 +131,15 @@ Console.log(this.nameInput.nativeElement.value);
 
 ## Life Cycle Hooks
 
+### ngOnChanges
+### ngOninit
+### ngDoCheck
+### ngAfterContentInit
+### ngAfterContentChecked
+### ngAfterViewInit
+### ngAfterViewChecked
+### ngOnDestroy
 
-**Next Steps**
+# Next Steps
 * [Binding](Binding.md#angular-component-template-bindings)
 * [Directives](Directives.md#angular-directives)

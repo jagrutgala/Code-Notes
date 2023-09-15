@@ -17,5 +17,5 @@ In our AppModule, we then need to specify the component that will serve as the e
   bootstrap: [AppComponent]
 ```
 
-<!-- # Next Steps
-[<-- Angular](Angular.md) | [Bootstrap -->](Bootstrap.md#angular-bootstrap) -->
+# Next Steps
+[<-- Angular](Angular.md) | [Bootstrap -->](Bootstrap.md#angular-bootstrap)

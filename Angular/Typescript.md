@@ -13,7 +13,7 @@ Typescript added static type checking and annotations to javascript.
 ## Getting started with Typescript
 
 ```
-npm install -g typescript
+$ npm install -g typescript
 ```
 
 **index.ts**
@@ -24,11 +24,11 @@ console.log(msg);
 ```
 
 ```
-tsc index.ts
+$ tsc index.ts
 ```
 
 ```
-node index.js
+$ node index.js
 ```
 
 ## Typescript Annotations
