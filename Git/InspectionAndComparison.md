@@ -2,7 +2,7 @@
 
 <!-- description -->
 <!-- use of inspection -->
-<!-- use of comparision -->
+<!-- use of comparison -->
 
 ## git show
 
@@ -54,7 +54,7 @@ You can also use git diff to compare the differences between two different commi
 
 
 # Next Steps
-[<-- Snapshotting](Snapshotting.md) | [Syncronization -->](Syncronization.md)
+[<-- Snapshotting](Snapshotting.md) | [Synchronization -->](Syncronization.md)
 
 ## Also See
 - [debugging git](Debugging.md)

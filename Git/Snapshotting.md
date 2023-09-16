@@ -128,7 +128,7 @@ $ git mv hello.txt world.txt
 
 
 # Next Steps
-[<-- Repo Setup](RepositorySetup.md) | [Inscpection & Comparison -->](InspectionAndComparison.md)
+[<-- Repo Setup](RepositorySetup.md) | [Inspection & Comparison -->](InspectionAndComparison.md)
 
 ## Also see
 - [gitignore (recommended)](GitIgnore.md)
