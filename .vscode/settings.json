@@ -6,7 +6,10 @@
     "oneDarkPro.markdownStyle": false,
     "workbench.colorTheme": "Winter is Coming (Dark Black - No Italics)",
     "cSpell.words": [
-        "Snapshotting"
+        "Snapshotting",
+        "unstage",
+        "unstaged",
+        "worktree"
     ],
     "markdown.preview.fontFamily": "'Fira Code'"
 }
