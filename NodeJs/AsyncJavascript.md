@@ -52,6 +52,7 @@ One way is using [callbacks](#callback-pattern).
 
 In Javascript functions are first-class objects. This means that functions can be passed around as arguments or returned from other functions.
 
+**callback.js**
 ```javascript
 function greet(name) {
   console.log(`Hello ${name}`);
@@ -89,3 +90,6 @@ button.addEventListener("click", function () {
   console.log("button was clicked");
 })
 ```
+
+# Next Steps
+[<-- Modules](Modules.md) | [Promises -->](Promises.md)

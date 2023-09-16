@@ -34,6 +34,13 @@ require("./add.js");
 console.log("Hello from index.js");
 ```
 
+**Output**
+```
+5
+Completed loading add.js
+Hello from index.js
+```
+
 ## Module Exports
 
 If we want to export particular parts of our code from a file to another, we can use `module.exports` property in NodeJs.
@@ -58,6 +65,11 @@ let sum = addFn(3, 5);
 console.log(sum);
 
 console.log("Hello from index.js");
+```
+**Output**
+```
+8
+Hello from index.js
 ```
 
 The `require()` returns the `module.exports` object. Here in this example module exports returns `add` function.
@@ -108,6 +120,14 @@ console.log(quo);
 
 console.log("Hello from index.js");
 ```
+**Output**
+```
+8
+30
+15
+3
+Hello from index.js
+```
 
 When we want to export multiple objects from a module; We essentially export an object that comprises of other objects and functions.
 
@@ -141,7 +161,11 @@ console.log(superhero);
 require("batman.js")
 require("superman.js")
 ```
-
+**Output**
+```
+Batman
+Superman
+```
 ### iife
 
 Iife also known as Self Invoking function.
@@ -202,7 +226,7 @@ module.exports = new SuperHero();
 
 In Example #1, if we are using `superHero.js` module in two or more places, all the of them will be reffering to the same object of `SuperHero`.
 
-### Example #2 ✔ Module Caching
+### Example #2 ✅ Module Caching
 
 **superHero.js**
 
@@ -224,16 +248,15 @@ class SuperHero {
 module.exports = SuperHero;
 ```
 
-
-
 # ES Modules
 
 _!Important_ : extension for es-module is `.mjs`
 
 ## ES Modules _Import Export Patterns_
 
-- Export Single object or function
-  **calculator.js**
+Export Single object or function
+
+**calculator.js**
 
 ```javascript
 const add = (a, b) => {
@@ -243,9 +266,9 @@ const add = (a, b) => {
 export default add;
 ```
 
-- Export Multiple object or function
-  **calculator.js**
+Export Multiple object or function
 
+**calculator.js**
 ```javascript
 const add = (a, b) => {
   return a + b;
@@ -257,9 +280,9 @@ const sub = (a, b) => {
 export default { add, sub };
 ```
 
-- Inline Export
-  **calculator.js**
+Inline Export
 
+**calculator.js**
 ```javascript
 export const add = (a, b) => {
   return a + b;
@@ -269,16 +292,14 @@ export const sub = (a, b) => {
 };
 ```
 
-- Importing default object
-
+Importing default object
 ```javascript
 import math from "./math.js";
 
 console.log(math.add(2, 5));
 ```
 
-- Destructuring exported module object
-
+Destructuring exported module object
 ```javascript
 import { add, sub } from "./math.js";
 
@@ -297,7 +318,7 @@ const data = require("./data.json");
 
 > Note
 >
-> `.json` extension is not mandatory, but if not given Node will try to find `<filename>.js` file first and load that instead of `<filenaeme.json` file.
+> `.json` extension is not mandatory, but if not given Node will try to find `<filename>.js` file first and load that instead of `<filename.json` file.
 > So it is a best practice to keep the `.json` extension.
 
 # Built-In Modules
@@ -306,7 +327,7 @@ Built-In Modules: Modules that NodeJs ships with
 
 ## node Protocol
 
-`node:` is called the node protocol. (It is a recently introduced feature)
+`node:` is called the node protocol. (It is a recently introduced feature in `V12`)
 When importing a built-in module `node:` is optional.
 
 Why to use node protocol?
@@ -319,6 +340,15 @@ Why to use node protocol?
 When importing a built-in module `node:` is optional.
 
 Why to use node protocol?
-
 - Makes it perfectly clear that it is a built-in module.
 - It make import identifier a valid absolute url.
+
+# Next Steps
+[<-- Node](NodeJs.md) | [Async Javascript -->](AsyncJavascript.md)
+
+## Also see
+
+Built-in modules
+- [Events Module](Built-InModules/EventsModule.md)
+- [File System Module (fs)](Built-InModules/FileSystemModule.md)
+- [Path Module](Built-InModules/PathModule.md)

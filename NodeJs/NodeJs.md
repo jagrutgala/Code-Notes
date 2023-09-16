@@ -30,25 +30,53 @@ Just a javascript engine is not enough; because Javascript as we know it is ECMA
 Download Node Js from [Here](https://nodejs.org/en/download/). Install the LTS version.
 Run the installation file and stick to defaults.
 
-## Hello World
-
 Command to check Node Version: `node -v`
 
-Start interactive node REPL: `node`
+## Hello World
+
+### Interactive Node REPL
+
+To start a interactive Node REPL use the `node` command. To exit interactive REPL: `Ctrl + C`
+```
+$ node
+Welcome to Node.js v16.17.0.
+Type ".help" for more information.
+> console.log("Hello World!");
+Hello World!
+undefined
+>
+```
 
 > Note
 >
-> - **R**ead **E**valudate **P**rint **L**oop
-> - To exit interactive REPL: `Ctrl + C`
+> **R**ead **E**valudate **P**rint **L**oop (REPL)
 
-Run a javascript file in node js: `node <file-path>`
-![Run a Javascript file using Node](Images/node-helloword.png)
+
+### Node run Js file
+
+To run a javascript (js) file using node use the `node` command. Syntax:
+```
+$ node <file-path>
+```
+
+**main.js**
+```javascript
+console.log("Hello World!");
+```
+```
+$ node main.js
+
+```
 
 > **Javascript in Node vs Browser**
 >
 > In Node we control the environment. We have access to filesystem and other apis provided by node, but we don't have access to the DOM.
 > In Browser we do not control the environment and we have access to the DOM but we don't have access to apis provided by node.
 
-😎 **Next Steps**
-- [Modules](./Modules.md#modules)
+# Next Steps
+
+[Modules -->](./Modules.md#modules)
+
+## Also see
+
 - [ES Modules](./Modules.md#es-modules)
