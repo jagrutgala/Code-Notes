@@ -8,6 +8,9 @@ Angular is an application-design framework and development platform for creating
 - Classes, Functions, Modules
 - Typescript, dependency injection, decorators
 
+> Note
+> If not familiar with Typescript, see typescript crash course [here](Typescript.md)
+
 ## Getting Started
 
 With Node installed, to install a and create a angular project, use the following command -
