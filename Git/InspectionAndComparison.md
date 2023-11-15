@@ -8,14 +8,20 @@
 
 `git show` command is used to see a specific commit details.
 
-Syntax for `git show`:
-```
+### Syntax
+```bash
 $ git show [<options>] [<commit-hash>...]
 ```
 
 commonly used flags with `git show` are:
 - `-p`: shows changes made in the commit, basically a diff
 - `--stat`: shows number of lines changed in each file
+
+### Example
+- `<commit>` -> see a particular commit details
+```bash
+$ git show 1f2060f
+```
 
 ## git log
 
@@ -25,7 +31,7 @@ The `git log` command is used to see all the commit logs. The commits are ordere
 - author of the commit name + email
 - commit message
 
-Syntax for git log:
+### Syntax
 ```
 $ git log [<option>] [<range>] [path]
 ```
@@ -38,9 +44,23 @@ commonly used flags with `git log` are:
 - `--before`: show commits before a date
 
 
+### Examples
+
+- `<branch>` -> see log of a branch without being checkout to that branch
+```
+$ git log feature/git
+```
+
+- `branchA..branchB` -> see commit in branchB and not in BranchA
+```
+$ git log main..feature/git
+```
+
 ## git diff
 
 The `git diff` command is used to show the differences between the working directory, the staging area (index), and the most recent commit in your Git repository.
+
+<!-- TODO: add git diff syntax block -->
 
 `git diff` (default) with no arguments will show the differences between the _working directory_ and the _staging area_.
 
@@ -51,6 +71,8 @@ The `git diff` command is used to show the differences between the working direc
 `git diff <commit-hash> <commit-hash>` will show the differences between the _those two commits_.
 
 You can also use git diff to compare the differences between two different commits, branches, or tags. For example, to compare the changes between the current branch and a different branch, you can use the command git diff <branch-name>.
+
+<!-- TODO: add git diff examples block. add examples for branch diff, staged changes diff -->
 
 
 # Next Steps
