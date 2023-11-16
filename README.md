@@ -11,8 +11,8 @@ Welcome to Code-Notes, a curated collection of notes and insights gathered over 
 
 ## Feedback and Contributions
 
-If you have any feedback, suggestions, or encounter any issues with the Ultimate Markdown extension, please feel free to open an issue on our [GitHub repository](https://github.com/jagrutgala/Code-Notes).
+If you have any feedback, suggestions, or encounter any issues with the Code-Notes Repository, please feel free to open an issue on our [GitHub repository](https://github.com/jagrutgala/Code-Notes).
 
 ## License
 
-This extension is licensed under the [MIT License](https://github.com/jagrutgala/Code-Notes/blob/main/LICENSE.md).
+This repository is licensed under the [MIT License](https://github.com/jagrutgala/Code-Notes/blob/main/LICENSE.md).
