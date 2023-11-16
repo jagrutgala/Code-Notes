@@ -23,6 +23,22 @@ commonly used flags with `git show` are:
 $ git show 1f2060f
 ```
 
+- `stats` -> see statistics of changed files
+```
+$ git show 1f2060f --stat
+```
+
+- `files list` -> see paths of all changed files
+```
+$ git show 1f2060f --pretty="format:" --name-only
+```
+
+- `patch` -> see patch changes in all changed or new files
+```
+$ git show 1f2060f --patch
+```
+
+
 ## git log
 
 The `git log` command is used to see all the commit logs. The commits are ordered by time of commit. The log shows the following info:
