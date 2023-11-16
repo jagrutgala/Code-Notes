@@ -16,11 +16,12 @@ A `commit` is the git version of a snapshot. We can create a commit in Git by us
 
 `git add` command is used to add changes into the staging area. Staging area is a collection of changes that will be committed if you commit.
 
-```
+### Syntax
+```bash
 $ git add [options] <file/directory-path>
 ```
 
-commonly used flags with `git add` are
+commonly used flags with `git add` are:
 
 - `-A` or `--all`: This flag stages all changes, including new files, modifications, and deletions.
 - `-u` or `--update`: This flag stages changes to files that are already being tracked by Git. It does not stage new files that have been added.
@@ -58,13 +59,28 @@ The git add -i command can be useful when you want to carefully control which ch
 - files staged and are ready to be committed.
 - files not being tracked by Git.
 
+### Syntax
+```bash
+$ git status [options]
+```
+
 The output of the `git status` command is usually color-coded, with different colors indicating different types of changes (e.g., unstaged changes, staged changes, untracked files, etc.).
+
+### Example
+```bash
+$ git status
+```
 
 ## git commit
 
 `git commit` command takes a snapshot of your changes in staging area. It captures the difference between the last snapshot and current snapshot. You can also add a note to remind yourself about the changes. It is like a save, and a serries of commits tracks the progress & evolution of your project overtime. Example of `git commit` command is: `git commit -m "Initial Commit"`
 
-commonly used flags with `git commit` are
+### Syntax
+```bash
+$ git commit [options]
+```
+
+commonly used flags with `git commit` are:
 
 - `-m`: This flag lets you write a short message right away, just like quickly explaining your changes.
 - `--amend`: Imagine you forgot to add a message to your commit. This flag helps you add and edit the last commit. (Note: this overrides the last commit with a new commit).
@@ -72,60 +88,11 @@ commonly used flags with `git commit` are
 - `--no-edit`: This flag specifies that you are rewording or amending the commit but don't want to change the commit message.
 - `--allow-empty`: This flag allows you to commit without any changes to the repository.
 
-## git restore
-
-`git restore` take you back to previous commits, without affecting the commit history. A simple example of git reset is `git restore --source=<commit-hash> <file-path>`. This command with take you back to whatever state the file was at the time of `<commit-hash>`. You can use git restore to discard changes in the working directory or unstage changes from the staging area.
-
-commonly used flags with `git restore` are
-- `--source`: Using this flag you can specify a commit to which you want to restore to.
-- `--staged`: This flag is used to unstage changes that you've added to the staging area.
-- `--worktree`: This is the default behavior of git restore. It restores the file to the state it has in the HEAD commit, effectively discarding any local changes in the working directory.
-
-## git reset
-
-`git reset` take you back to previous commits, undoing the changes. A simple example of git reset is `git reset --hard <commit-hash>`. This command with take you back to whatever state your repository was at the time of `<commit-hash>`.
-
-> Note: It edits your commit history. The commits itself are gone. Be careful when using this command.
-
-commonly used flags with `git reset` are
-- `--hard`: Using this flag with git reset will remove changes completely.
-> Note: Changes will be lost forever.
-- `--soft`: Using this flag with git reset will remove the commits but keep the changes. The changes will be unstaged.
-- `--mixed`: This flag is a mix of `--soft` and `--hard` where the commits are remove and changes are unstaged. Plus, you can decide which changes to put back on the remove completely and which to keep.
-
-## git rm
-`git rm` command is used to remove files from the git. It is also frequently used to remove files from staging area. For example, Say we have a file we no longer want to be tracked. We will use this command to remove it completely, then add the file to gitignore.
-
-Syntax for `git rm`:
+### Example
+- amend your last commit with a new message.
+```bash
+$ git commit --amend -m "New commit message"
 ```
-$ git rm [options] [<file/path>]
-```
-
-commonly used flags for `git rm` are:
-- `-r`: recursive flag used on a directory to remove the directory and all its children
-- `--cached`: cached flag is used to signify to remove from staging area
-
-Example of `git rm` to remove all files from staging area:
-```
-$ git rm --cached
-```
-
-## git mv
-`git mv` command is used to **move files** or **rename files** in the git.
-
-Syntax for `git mv`:
-```
-$ git mv [options] <source> <destination>
-```
-
-Example of `git mv` to rename a file:
-```
-$ git mv hello.txt world.txt
-```
-
-
-## git notes
-
 
 # Next Steps
 [<-- Repo Setup](RepositorySetup.md) | [Inspection & Comparison -->](InspectionAndComparison.md)
