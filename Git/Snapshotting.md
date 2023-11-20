@@ -1,16 +1,21 @@
 # Snapshotting
 
-In Git, the process of taking a `snapshot` or `image` of the current state of your code at a particular point in time is referred to as "snapshotting." This snapshot contains every file and directory in your repository, along with their contents.
+In Git, "`commit`" is the a saved version of the state/data in the repository. Newer commits lay on top of previous commits, creating a chain of commits, showcasing a history of changes to the state/data in the repository.
 
-A `commit` is the git version of a snapshot. We can create a commit in Git by using the `git commit` command. Git stages all of your changes and creates a new commit of the repository's history.
-
+What "`Git Snapshotting`" is the process of committing and building this history. Git also allows you to edit and delete parts of this history.
 
 ## Git Workspace
 
-### untracked
-### tracked
-### staged
+In Git, when making changes and updating the data in the repository, git tracks these changes in 3 layers/stages:
 
+### Untracked Files
+These are new files that Git hasn't encountered before or files that have been created since the last commit. Essentially, Git is unaware of these files. They're sitting in your working directory, but Git isn't track of all different changes done to them. To start tracking changes in these files, you need to commit them.
+
+### Tracked Files
+These are the files that have been there at-least since the last commit. Fundamentally, Git is aware of these files.
+
+### Staged Files
+These are the files that have been there at-least since the last commit. And have been selected to be committed in the next commit. These files are in the staging area.
 
 ## git add
 

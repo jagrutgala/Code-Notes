@@ -57,3 +57,6 @@ $ git switch [-options] <branch>
 ## git tag
 
 ## git worktree
+
+# Next Steps
+[<-- Branching](BranchingAndMerging.md) | [Patching -->](Patching.md)

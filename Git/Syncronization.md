@@ -1,9 +1,10 @@
 # Synchronization
 
+A remote is also a git repository that is on the cloud/server. A remote allows a git repository to be shared and developed with other people, while maintaining correctness of data in the repository.
 
 ## git remote
 
-`git remote` command used to manage remote connections in a Git repository. The `git remote` command allows you to view, add, and remove connections to repositories. A Git Remote is a cloud server of sorts that stores a copy of your code, as a back up. It also serves as a platform for sharing you code with your colleagues and friends for collaboration.
+`git remote` command used to manage remote connections in a Git repository. The `git remote` command allows you to view, add, and remove connections to repositories.
 
 > Note
 > Using synchronization commands usually involve authentication, i.e. putting username & password.
@@ -83,4 +84,4 @@ commonly used flags with `git fetch` are:
 
 
 # Next Steps
-[<-- Inspection & Comparison](InspectionAndComparison.md) | [Patching -->](Patching.md)
+[<-- Inspection & Comparison](InspectionAndComparison.md) | [Branching -->](BranchingAndMerging.md)
