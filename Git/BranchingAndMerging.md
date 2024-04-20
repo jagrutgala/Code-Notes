@@ -36,13 +36,13 @@ $ git checkout [<options>] <branch|commit>
 
 commonly used flags with `git checkout` are:
 - `-b`: allows you to checkout and create a branch at the same time from the current branch
-- ``
+
 
 ## git switch
 
 `git switch` is one of the newer feature available in git that allows us to checkout from a branch to another branch. Even if we have a unstaged or untracked changes.
 
-### Sntax
+### Syntax
 
 ```bash
 $ git switch [-options] <branch>
@@ -56,7 +56,7 @@ $ git switch [-options] <branch>
 
 ## git tag
 
-## git worktree
+<!-- TODO: (own separate file with workflow) ## git worktree -->
 
 # Next Steps
 [<-- Branching](BranchingAndMerging.md) | [Patching -->](Patching.md)

@@ -8,6 +8,8 @@ A remote is also a git repository that is on the cloud/server. A remote allows a
 
 > Note
 > Using synchronization commands usually involve authentication, i.e. putting username & password.
+>
+> Never share your passwords with anyone.
 
 ### Syntax
 ```bash
