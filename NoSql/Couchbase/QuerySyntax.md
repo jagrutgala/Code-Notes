@@ -92,9 +92,9 @@ SELECT tutorialt.relation, COUNT(tutorial.*) AS count
 **Problem Statment**: "Retrieve all the emails with the corresponding count of their children and order them by the number of children they have."
 
 ```sql
-SELECT tutorial.email, LENGTH(tutorial.children) as children_count
+SELECT tutorial.email, ARRAY_COUNT(tutorial.children) as children_count
     FROM tutorial
-    ORDER BY LENGTH(tutorial.children) DESC
+    ORDER BY ARRAY_COUNT(tutorial.children) DESC
 ```
 
 ## JOINS
