@@ -46,7 +46,7 @@ This command will create a new directory called `my-module` in the `src/app` dir
 
 # Next Steps
 
-[<-- Angular](Angular.md#angular) | [Bootstrap -->](Bootstrap.md#angular-bootstrap)
+[<-- Angular](./Bootstrap.md) | [Components -->](./Component.md)
 
-- [Bootstrap](Bootstrap.md#angular-bootstrap)
-- [CLI](Angular-CLI.md#angular-cli)
+- [Boo](./Services.md)
+- [Services](./Services.md)

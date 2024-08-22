@@ -4,7 +4,7 @@ Components are the building blocks of angular application. In Angular component 
 
 ## Generating Components using CLI
 
-```
+```bash
 $ ng generate component <component-name>
 ```
 
