@@ -1,4 +1,4 @@
-# Angular Component Styling
+# Component Styling
 
 In Angular, there are several ways to style our components and application.
 
