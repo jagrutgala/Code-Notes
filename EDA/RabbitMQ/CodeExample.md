@@ -98,4 +98,12 @@ dotnet run
 ```
 
 
-# 
+<!-- # Example
+
+Lets look at a .Net Implementation of Rabbit MQ. We will need rabbitmq and .Net installed on our system and create 2 Conole Applications. These 2 Console Applications namely Send and Receive we act as producer and consumer respectively.
+
+> Preparations:
+> 
+> RabbitMQ
+> .Net
+> 2 Console Applications -->
