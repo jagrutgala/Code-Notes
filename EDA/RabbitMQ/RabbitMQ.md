@@ -63,7 +63,7 @@ graph LR
     Exchange1[Topic Exchange] --key:#.login---> Queue1
     Exchange1[Topic Exchange] --key:user.*.payment---> Queue2
     Exchange1[Topic Exchange] ---> Queue3
-````
+```
 
 The asterisk ("*") to match a word in a specific position of the routing key. For example, a routing pattern of `"user.*.payment"` only match routing keys that are 3 words long, the first word is "user" and third word is "payment".
 
