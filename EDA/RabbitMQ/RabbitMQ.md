@@ -19,6 +19,13 @@ graph LR
 - `Message Broker`: Message Broker are the middle man that pass the message from a producers to the appropriate consumers.
 
 
+## Queues
+
+Rabbit MQ being an implementation of asynchronous communication the messages are dropped in buffers called `Queues`. As its name suggests it behaves similar to the Queue Data Structure. It passes on the messages in First In First Out (`FIFO`) format.
+
+Messages can be in sent to the queue by the producer or the exchanges and then processed by the consumer.
+
+
 ## Exchange
 
 In RabbitMQ Exchanges are the core part of the asynchronous communication, playing the roles of router that pass the message to the right queue.
@@ -68,8 +75,6 @@ graph LR
 The asterisk ("*") to match a word in a specific position of the routing key. For example, a routing pattern of `"user.*.payment"` only match routing keys that are 3 words long, the first word is "user" and third word is "payment".
 
 A pound symbol ("#") indicates a match of zero or more words. For example, a routing pattern of `"#.login"` matches any routing keys ends with "login".
-
-## Queues
 
 
 ## AMQP
