@@ -1,1 +1,3 @@
-## Git Config
+# Git Config
+
+## Credentials
