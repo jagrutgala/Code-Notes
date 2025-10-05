@@ -4,4 +4,5 @@ Google Cloud Engineer Roadmap
 
 ## Google Cloud Certification
 
+## Exam Format
 
