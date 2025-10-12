@@ -3,10 +3,9 @@
     "markdown.styles": [
         "./.vscode/markdown-styles.css"
     ],
-    "oneDarkPro.markdownStyle": false,
     "workbench.colorTheme": "Winter is Coming (Dark Black - No Italics)",
     "cSpell.words": [
-        "Snapshotting",
+        "snapshotting",
         "unstage",
         "unstaged",
         "worktree"
