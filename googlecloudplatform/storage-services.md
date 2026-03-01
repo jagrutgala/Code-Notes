@@ -39,13 +39,13 @@ For good practice you would want to take regular backups of your Persistent Disk
 
 **Snapshots VS Custom Images VS Machine Image**
 
-| Use-Case                 | Snapshots | Custom Images | Machine Image |
-|--------------------------|-----------|---------------|---------------|
-| single disk backup       | ✅         | ✅             | ✅             |
-| multi disk backup        | ❌         | ❌             | ✅             |
-| differential disk backup | ✅         | ✅             | ✅             |
-| clone disk               | ❌         | ✅             | ✅             |
-| VM Machine Configuration | ❌         | ❌             | ✅             |
+| Use-Case                 | Snapshots          | Custom Images      | Machine Image      |
+|--------------------------|--------------------|--------------------|--------------------|
+| single disk backup       | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| multi disk backup        | :x:                | :x:                | :white_check_mark: |
+| differential disk backup | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| clone disk               | :x:                | :white_check_mark: | :white_check_mark: |
+| VM Machine Configuration | :x:                | :x:                | :white_check_mark: |
 
 
 
@@ -172,4 +172,5 @@ MemCache is recommend for cache purposes, otherwise use Redis.s
 
 
 ## Cloud BigQuery
+
 <!-- TODO - BigQuery + Features -->

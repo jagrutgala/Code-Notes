@@ -144,7 +144,7 @@ It is quick to create a VM using a custom image and saves a lot of time customiz
 
 What we can do is take this further with "Machine Images". Machine Images not only store the OS and software installed on the boot disk, but also the VM configuration, metadata and permissions. Making it very easy to replicate a particular VM over and over again.
 
-<!-- TODO - Images & Managing Images in gcloud CLI -->
+<!-- TODO - Machine Images & Managing Machine Images in gcloud CLI -->
 
 
 ### Snapshots
